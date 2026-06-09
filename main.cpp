@@ -1,27 +1,19 @@
-#include <iostream>
-using namespace std;
-
-int main() {
+struct Transaksi {
+    string npm;
+    float nilaiLama, nilaiBaru;
+};
 
 void ubahNilai(Mahasiswa *mhs, float nilaiBaru) {
     mhs->setNilai(nilaiBaru);
 }
 
-struct Stack {
-    string data[10];
-    int top = -1;
+Mahasiswa *p = &dataMhs[1];
+ubahNilai(p, 88);
+cout << "\nSetelah Nilai Mutiara Diubah" << endl;
+tampilData();
 
-    void push(string isi) {
-        top++;
-        data[top] = isi;
-    }
-
-    void tampil() {
-        cout << "\n=== Riwayat Aktivitas ===" << endl;
-        for (int i = top; i >= 0; i--) {
-            cout << data[i] << endl;
-        }
-    }
-};
-    return 0;
-}
+Transaksi t1 = {"2507071001", 80, 88};
+cout << "\n Data Transaksi" << endl;
+cout << "NPM        : " << t1.npm << endl;
+cout << "Nilai Lama : " << t1.nilaiLama << endl;
+cout << "Nilai Baru : " << t1.nilaiBaru << endl;
