@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 struct Stack {
     string data[10];
     int top = -1;
@@ -10,6 +11,7 @@ struct Stack {
         for (int i = top; i >= 0; i--) cout << data[i] << endl;
     }
 };
+
 int main() {
     
 
