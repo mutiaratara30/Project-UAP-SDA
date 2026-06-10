@@ -34,8 +34,7 @@ antrian.enqueue("Revisi nilai Tamam");
 antrian.enqueue("Revisi nilai Aldion");
 antrian.tampil();
 
-int main() {
-    
+
 
     return 0;
 }
